@@ -24,6 +24,10 @@ had to work with it.
 ### Resources
 ---
 [MERN Stack information](https://www.geeksforgeeks.org/mern-stack/)
+
 [Spotify API Docs](https://developer.spotify.com/documentation/) (*We're using the WebAPI*)
+
 [Our Discord!](https://discord.gg/MppSMsn)
+
 [Trello](https://trello.com/invite/b/XqZurS5h/1e74cae490a8484cc14d43abaadf4e41/playlist-app)
+

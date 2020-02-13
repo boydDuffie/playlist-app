@@ -17,11 +17,11 @@ class Color
 
     //Using reverse-bayesan formula to find the resulting mix of two colors
     //returns an array containing the new colors
-    averageColors(color1, color2)
+    averageColors(color1, color2, weight1, weight2)
     {
-       newR = sqrt((color1.R * color2.R)/2);
-       NewG = sqrt((color1.G * color2.G)/2); 
-       newB = sqrt((color1.B * color2.B)/2); 
+       newR = sqrt((color1.R*color1.R*weight1)+(color2.R*color2.R*weight2));
+       NewG = sqrt((color1.G*color1.G*weight1)+(color2.G*color2.G*weight2)); 
+       newB = sqrt((color1.B*color1.B*weight1)+(color2.B*color2.B*weight2)); 
        return [newR, newG, newB]; 
     }
 

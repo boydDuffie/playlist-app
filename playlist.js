@@ -79,4 +79,59 @@ class Color_Playlist extends Playlist
 		super(id, owner, songs);
 		this._color = color;
 	}
+
+	get color()
+	{
+		return this._color;
+	}
+
+	set color(c)
+	{
+		if(c.R && c.G && c.B)
+		{
+			this._color = c;
+		}
+		else
+		{
+			console.log("ERROR: could not change color; missing R, G, or B value.");
+		}
+	}
+}
+
+class Texture_Playlist extends Playlist
+{
+	constructor(id, owner, songs, texture)
+	{
+		super(id, owner, songs);
+		this._texture = texture;
+	}
+
+	get texture()
+	{
+		return this._texture;
+	}
+
+	set texture(t)
+	{
+		this._texture = t;
+	}
+}
+
+class Temperature_Playlist extends Playlist
+{
+	constructor(id, owner, songs, temperature)
+	{
+		super(id, owner, songs);
+		this._temperature = temperature;
+	}
+
+	get temperature()
+	{
+		return this._temperature;
+	}
+
+	set temperature(t)
+	{
+		this._temperature = t;
+	}
 }

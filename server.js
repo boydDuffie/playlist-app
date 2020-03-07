@@ -1,7 +1,22 @@
-const http = require("http");
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const errorHandler = require('errorhandler');
+const express = require('express');
 
-http.createServer(function(req, resp){
-	resp.writeHead(200, {"Content-Type": "text/plain"});
-	resp.write("aye");
-	resp.end();
-}).listen(8888);
+//'require' routers here
+
+const app = express();
+const PORT = process.env.PORT || 4000;
+
+app.use(bodyParser.json());
+app.use(cors());
+
+//app.use('/path', routerVar);
+
+app.use(errorHandler());
+
+app.listen(PORT, () => {
+	console.log(`Listening on port ${PORT}`);
+});
+
+module.exports = app;

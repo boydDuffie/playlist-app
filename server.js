@@ -6,7 +6,7 @@ const express = require('express');
 //'require' routers here
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = 8888;
 
 //Spotify API variables
 const client_id = '1df847690a434522b6194652b2dc79bb';

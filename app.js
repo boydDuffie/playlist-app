@@ -2,6 +2,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const errorHandler = require('errorhandler');
 const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+const swig = require('swig');
 
 //'require' routers here
 

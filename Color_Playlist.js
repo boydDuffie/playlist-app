@@ -6,6 +6,7 @@ module.exports = class Color_Playlist extends Playlist
 	{
 		super(id, owner, songs);
 		this._color = color;
+		this.name += color;
 	}
 
 	get color()
@@ -13,11 +14,11 @@ module.exports = class Color_Playlist extends Playlist
 		return this._color;
 	}
 
-	set color(c)
+	set color(newColor)
 	{
-		if(c.R && c.G && c.B)
+		if(newColor.R && newColor.G && newColor.B)
 		{
-			this._color = c;
+			this._color = newColor;
 		}
 		else
 		{

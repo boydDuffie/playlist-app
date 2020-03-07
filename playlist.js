@@ -11,6 +11,7 @@ module.exports = class Playlist
 		this._id = id;
 		this._owner = owner;
 		this._songs = songs;
+		let name = 'Songs that are ';
 	}
 
 	get id()

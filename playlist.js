@@ -58,7 +58,7 @@ module.exports = class Playlist
 	{
 		if(song.id)
 		{
-			for(int i=0; i<this._songs.length; i++)
+			for(i=0; i<this._songs.length; i++)
 			{
 				if(this._songs[i].id === song.id)
 				{

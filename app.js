@@ -5,6 +5,8 @@ const errorHandler = require('errorhandler');
 const session = require('express-session');
 const passport = require('passport');
 const swig = require('swig');
+const SpotifyStrategy = require('passport-spotify').Strategy;
+const consolidate = require('consolidate');
 
 //'require' routers here
 

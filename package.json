@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/boydDuffie/playlist-app/issues"
   },
-  "homepage": "https://github.com/boydDuffie/playlist-app#readme"
+  "homepage": "https://github.com/boydDuffie/playlist-app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "passport": "^0.4.1",
+    "swig": "^1.4.2"
+  }
 }

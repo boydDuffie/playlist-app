@@ -1,0 +1,24 @@
+<!--this is a sample html file from https://github.com/JMPerez/passport-spotify/-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Passport-Spotify Example</title>
+</head>
+
+<body>
+	{% if !user %}
+	<p>
+		<a href="/">Home</a> |
+		<a href="/login">Log In</a>
+	</p>
+	{% else %}
+	<p>
+		<a href="/">Home</a> |
+		<a href="/account">Account</a> |
+		<a href="/logout">Log Out</a>
+	</p>
+	{% endif %} {% block content %}
+</body>
+
+</html>

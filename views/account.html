@@ -1,0 +1,7 @@
+<!--this is a sample html file from https://github.com/JMPerez/passport-spotify/-->
+{% extends 'layout.html' %} {% block content %}
+<p>ID: {{ user.id }}</p>
+<p>Profile:
+    <a href=" {{ user.profileUrl }}">{{ user.profileUrl }}</a>
+</p>
+{% endblock %}

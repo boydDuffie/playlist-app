@@ -29,6 +29,11 @@ app.use(errorHandler());
 This next bit is from the skeleton code provided at https://github.com/JMPerez/passport-spotify/blob/master/examples/login/app.js
 It will likely need to be modified moving forward but it is a good start.
 */
+const ensureAuthenticated = (req, res, next) => {
+	if(req.isAuthenticated) return next();
+	res.redirect('/login');
+};
+
 passport.serializeUser((user, done) => {
 	done(null, user);
 });
@@ -117,10 +122,5 @@ app.get('/logout', (req, res) => {
 app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 });
-
-const ensureAuthenticated = (req, res, next) => {
-	if(req.isAuthenticated) return next();
-	res.redirect('/login');
-};
 
 module.exports = app;
